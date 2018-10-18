@@ -1,0 +1,17 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background: gray;
+	text-align: center;
+}
+p{
+	color: blue;
+	padding: 15px;
+}
+select {
+	width: 150px;
+	height: 30px;
+	margin-top: 20px;
+}

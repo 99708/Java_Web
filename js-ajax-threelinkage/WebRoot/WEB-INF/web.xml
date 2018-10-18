@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+  <servlet>
+    <servlet-name>ThreeLinkAgeServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.xyq.servlet.ThreeLinkAgeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CityServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.xyq.servlet.CityServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>TownServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.xyq.servlet.TownServlet</servlet-class>
+  </servlet>
+
+  
+
+
+
+  <servlet-mapping>
+    <servlet-name>ThreeLinkAgeServlet</servlet-name>
+    <url-pattern>/threeLinkAgeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CityServlet</servlet-name>
+    <url-pattern>/cityServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TownServlet</servlet-name>
+    <url-pattern>/townServlet</url-pattern>
+  </servlet-mapping>
+ 
+</web-app>
