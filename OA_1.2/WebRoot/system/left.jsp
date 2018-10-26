@@ -80,7 +80,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<dd>
 				<div class="title"><span><img src="images/leftico03.png" /></span>考勤管理</div>
 				<ul class="menuson">
-					<li><cite></cite><a href="dutyAdd.html" target="rightFrame">签到签退</a><i></i></li>
+					<li><cite></cite><a href="duty/dutyAdd.jsp" target="rightFrame">签到签退</a><i></i></li>
 					<li><cite></cite><a href="dutyList.html" target="rightFrame">考勤管理</a><i></i></li>
 					<li><cite></cite><a href="myDuty.html" target="rightFrame">我的考勤</a><i></i></li>
 				</ul>
