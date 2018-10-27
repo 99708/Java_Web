@@ -1,5 +1,6 @@
 <%@ page language="java" isELIgnored="false" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -92,7 +93,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						
 					</a>
 					<a>
-						 <input name="" type="button" class="scbtn2" value="导出"/>
+						 <input id="exportDutyId" type="button" class="scbtn2" value="导出"/>
 						
 					</a>
 					
@@ -128,7 +129,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							<td>${dutyVO.empid }</td>
 							<td>${dutyVO.realname }</td>
 							<td>${dutyVO.deptname }</td>
-							<td>${dutyVO.dtdate }</td>
+							<td><fmt:formatDate pattern="yyyy-MM-dd" value="${dutyVO.dtdate }" /></td>
 							<td>${dutyVO.signintime }</td>
 							<td>${dutyVO.signouttime }</td>
 						
@@ -177,6 +178,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 		<script type="text/javascript">
 			$('.tablelist tbody tr:odd').addClass('odd');
+		</script>
+		
+		<script type="text/javascript">
+			$("#exportDutyId").click(function(){
+				window.location.href = "dutyServlet.servlet?method=exportExcel";
+			});
 		</script>
 
 	</body>
